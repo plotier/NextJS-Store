@@ -1,18 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
+import Layout from '../components/layout'
 
 export const faq = () => {
   return (
-    <div>
-        <h1>FAQ</h1>
-        <p>Hola 
-        <Link href="/">
-  <a>Ir a Home</a>
-</Link>
 
-        </p>
-
-    </div>
+    <Layout>
+      <h1>FAQ</h1>
+    </Layout>
   )
 }
 
