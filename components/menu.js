@@ -24,7 +24,7 @@ const handleOpenCart= ()=>{
                 </Link>
             </div>
             <div>
-                <a className={style.link}onClick={handleOpenCart} href="#">Cart(0)</a>
+                <a className={style.link}onClick={handleOpenCart} href="#">Cart({cart.getNumberOfItems()})</a>
             </div>
         </nav>
     )

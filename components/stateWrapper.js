@@ -5,7 +5,7 @@ const AppContext = createContext({
     items: [],
     openCart: () => { },
     closeCart: () => { },
-    addItemToCart: () => { },
+    addItemToCart: (item) => { },
     getNumberOfItems: () => { }
 
 });

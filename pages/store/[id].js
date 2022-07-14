@@ -3,9 +3,10 @@ import Product from "../../components/product";
 import { getItemData, getPathsFromIds } from "../../lib/utils";
 
 export default function ProductPage({ productInfo }) {
-    return (<Layout>
-        <Product item={productInfo} showAs="Page" />
-    </Layout>);
+    return (
+        <Layout title={productInfo.data.title}>
+            <Product item={productInfo.data} showAs="Page" />
+        </Layout>);
 }
 
 export async function getStaticPaths() {
