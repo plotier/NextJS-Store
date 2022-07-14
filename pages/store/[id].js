@@ -12,7 +12,7 @@ export default function ProductPage (){
     const paths = await getPathsFromIds();
 
     return{
-        paths:paths,
+        paths:paths,   
         fallback:false
     }
  }
