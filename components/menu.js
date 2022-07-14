@@ -1,8 +1,14 @@
-import React from 'react';
+import { useAppContext } from './stateWrapper'
 import Link from 'next/link'
 import style from '../styles/menu.module.css'
 
 const Menu = () => {
+const cart = useAppContext();
+
+const handleOpenCart= ()=>{
+ cart.openCart();
+}
+
     return (
         <nav className={style.menu}>
             <div>
@@ -18,7 +24,7 @@ const Menu = () => {
                 </Link>
             </div>
             <div>
-                <a className={style.link} href="#">Cart(0)</a>
+                <a className={style.link}onClick={handleOpenCart} href="#">Cart(0)</a>
             </div>
         </nav>
     )
